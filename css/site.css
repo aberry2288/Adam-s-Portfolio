@@ -37,6 +37,91 @@ font-family: 'Roboto', sans-serif;
     --ab-theme-900: hsl(216, 50%, 11%);
 }
 
+/* Element Overrides */
+
+body {
+    font-family: var(--ab-body-font);
+    font-size: var(--ab-font-size);
+    font-weight: var(--ab-font-weight);
+    line-height: var(--ab-line-height);
+    color: var(--ab-dark-color);
+    background: var(--ab-background-color);
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-family: var(--ab-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--ab-title-color);
+    letter-spacing: .1rem;
+}
+
+a {
+    color: var(--ab-theme-500);
+}
+
+a:hover {
+    color: var(--ab-theme-400);
+}
+
+main {
+    margin-bottom: 5rem;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* End Element Overrides */
+
+/* Begin: Home Page */
+
+#home {
+    background-color: var(--ab-theme-900);
+    background-image: url(/img/space_bg.jpg);
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+/* End Home Page */
+
+/* Main Content */
+
+.section-page {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-page:nth-child(even) {
+    background-color: var(--ab-theme-100);
+}
+
+.section-page:nth-child(odd) {
+    background-color: var(--ab-theme-150);
+}
+
+
+
+/* End Main Content*/
+
 /* Footer Styles */
 
 .socialicons {
@@ -55,3 +140,5 @@ footer.fixed-bottom {
 footer .card {
     background-color: var(--ab-theme-800)
 }
+
+/* End Footer Styles */
