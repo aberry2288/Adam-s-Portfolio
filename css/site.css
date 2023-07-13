@@ -87,17 +87,63 @@ section {
     flex-direction: column;
 }
 
+.btn-primary {
+    --bs-btn-bg: var(--ab-theme-600);
+    --bs-btn-border-color: var(--ab-theme-600);
+    --bs-btn-hover-bg: var(--ab-theme-700);
+    --bs-btn-hover-border-color: var(--ab-theme-700);
+
+}
+
 /* End Element Overrides */
 
 /* Begin: Home Page */
 
 #home {
     background-color: var(--ab-theme-900);
-    background-image: url(/img/space_bg.jpg);
+    background-image: url(/img/Valley\ Background.jpg);
     background-size: cover;
-    background-position: top left;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
+}
+
+#homeCover {
+    backdrop-filter: brightness(0.25) blur(4px);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mainLogo {
+    height: 3em;
+    padding-left: .08em;
+}
+
+.mainTitle,
+.subTitle {
+    color: var(--ab-light-color);
+    text-transform: uppercase;
+}
+
+.mainTitle {
+    font-family: var(--ab-title-font);
+    font-size: 5rem;
+    line-height: 4rem;
+}
+
+.subTitle {
+    font-family: var(--ab-subtitle-font);
+    font-size: 1.28rem;
+    letter-spacing: .1rem;
+    line-height: 1.1rem;
+    font-weight: 300;
+    text-align: center;
+
 }
 
 
@@ -142,3 +188,38 @@ footer .card {
 }
 
 /* End Footer Styles */
+
+/***** Start Media Queries ****/
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .mainTitle {
+        font-size: 7rem;
+        line-height: 5.5rem;
+    }
+
+    .subTitle {
+        font-size: 1.7rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.18rem;
+        padding-top: .25rem;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
+
+/**** END Media Queries ****/
