@@ -20,11 +20,16 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
+    <!-- Dev Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/iconCard.css">
 
     <!-- Favicon - Pick Highest Resolution Available -->
-    <link rel="shortcut icon" href="/img/favicon green tree.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
@@ -34,13 +39,13 @@
             <div id="homeCover">
                 <div class="mainHeader text-center">
                     <div class="mainTitle">
-                        Adam 
-                        <span>
-                            <img src="/img/Tree Green.png" class="mainLogo" alt="Adam Berry Developer Logo">
-                        </span>
-                        Berry
+                        <div class="row">
+                            <span>
+                                <img src="/img/Adam Berry Tree White 3.png" class="mainLogo"
+                                    alt="Adam Berry Developer Logo">
+                            </span>
+                        </div>
                     </div>
-                    
                     <div class="subTitle">
                         Software Developer
                     </div>
@@ -67,8 +72,123 @@
                 <a href="/img/Adam Berry Resume.docx" class="btn btn-primary my-3">Download Resume</a>
             </div>
         </section>
+
         <section id="skills" class="section-page">
-            <h2>Skills</h2>
+            <div class="container">
+                <h2 class="text-center display-1 mb-5"> What I Use</h2>
+                <div class="row gy-5">
+                    <div class="col-12 col-lg-6">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- Skill Icons -->
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+                                </div>
+                                <div class="icon dotnet">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- Content -->
+                                <p>
+                                    I use C# on a daily basis to build full-stack web applications. You can see my work
+                                    implementing C# in my <a href="#projects">Projects</a> section!
+                                </p>
+                                <p>
+                                    I use proven design patterns and frameworks to build websites.
+                                    ASP.NET Core Web and MVC fits the bill for most projects.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- Skill Icons -->
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                </div>
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                                </div>
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- Content -->
+                                <p>
+                                    I use HTML, CSS and Bootstrap to build beautiful
+                                    responsive websites. Bootstrap is my go-to CSS framework.
+                                    Many shy away from the front-end, but I embrace it.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- Skill Icons -->
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- Content -->
+                                <p>
+                                    JavaScript is the language of the web. I use vanilla JS and I am comfortable
+                                    with many JS frameworks. Check out my<a href="#challenges"> Challenges</a> section for some JS projects!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- Skill Icons -->
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- Content -->
+                                <p>
+                                    SQL is the language of the database. My projects all utilize a database. I have used Postgres on all of them. I can write SQL on any DB platform.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- Skill Icons -->
+                                <div class="icon git">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                                </div>
+                                <div class="icon github">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- Content -->
+                                <p>
+                                    I use git and github for all my projects. Git is the most used source control framework on the planet. I also employ CI/CD for publishing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <section id="projects" class="section-page">
             <h2>Projects</h2>
@@ -89,7 +209,7 @@
         <div class="container-fluid">
             <div class="row align-items-center g-3">
                 <div class="col-3">
-                    <img src="/img/Tree White.png" alt="Logo" height="80">
+                    <img src="/img/Tree Styled White.png" alt="Logo" height="80">
                 </div>
                 <div class="col-9 col-lg-6 d-flex justify-content-end justify-content-lg-center">
                     <div class="card shadow">
