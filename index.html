@@ -25,9 +25,11 @@
 
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/themes.css">
     <link rel="stylesheet" href="/css/site.css" />
     <link rel="stylesheet" href="/css/iconCard.css" />
     <link rel="stylesheet" href="/css/hoverCard.css" />
+    <link rel="stylesheet" href="/css/blogCard.css">
 
     <!-- Favicon - Pick Highest Resolution Available -->
     <link rel="shortcut icon" href="/img/Styled Tree Favicon Black.png" type="image/x-icon">
@@ -234,7 +236,8 @@
                                     <p>
                                         A full-stack bug tracker built with ASP.NET MVC, C# and SQL
                                     </p>
-                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactProModal">
+                                    <button class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#contactProModal">
                                         Learn More
                                     </button>
                                 </div>
@@ -252,7 +255,8 @@
                                     <p>
                                         A full-stack bug tracker built with ASP.NET MVC, C# and SQL
                                     </p>
-                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#codeTalkModal">
+                                    <button class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#codeTalkModal">
                                         Learn More
                                     </button>
                                 </div>
@@ -386,10 +390,194 @@
             </div>
         </section>
         <section id="blog" class="section-page">
-            <h2>Blog</h2>
+            <div class="container">
+                <h2 class="display-1 mb-5 text-center">Stuff I Write About</h2>
+                <p>
+                    I write on my blog on a regular basis. I think it's important to share your knowledge with others.
+                </p>
+                <div id="blogs">
+                    <article class="card mb-4 blog-article ">
+                        <div class="row blog-row g-0">
+                            <!-- Blog Image -->
+                            <div class="col-lg-4 blog-header">
+                                <a href="#" class="blog-image-link">
+                                    <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="Blog post image">
+                                </a>
+                                <div class="blog-date">
+                                    <div class="blog-day">11</div>
+                                    <div class="blog-month">JANUARY</div>
+                                </div>
+                            </div>
+                            <!-- Blog Title and text preview -->
+                            <div class="col-lg-8">
+                                <div class="card-body h-100 d-flex flex-column justify-content-around ">
+                                    <h3 class="card-title">Make SQL Queries Fly</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate,
+                                        ducimus vitae voluptatibus similique cumque nulla magni eius sequi possimus ex
+                                        quia aspernatur, incidunt illum cupiditate quas eaque accusamus corrupti!
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate,
+                                        ducimus vitae voluptatibus similique cumque nulla magni eius sequi possimus ex
+                                        quia aspernatur, incidunt illum cupiditate quas eaque accusamus corrupti!
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">Published 3 days ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card mb-4 blog-article ">
+                        <div class="row blog-row g-0">
+                            <!-- Blog Image -->
+                            <div class="col-lg-4 blog-header">
+                                <a href="#" class="blog-image-link">
+                                    <img src="/img/Blog/Blog_CodeTag.jpg" class="blog-image" alt="Blog post image">
+                                </a>
+                                <div class="blog-date">
+                                    <div class="blog-day">13</div>
+                                    <div class="blog-month">March</div>
+                                </div>
+                            </div>
+                            <!-- Blog Title and text preview -->
+                            <div class="col-lg-8">
+                                <div class="card-body h-100 d-flex flex-column justify-content-around ">
+                                    <h3 class="card-title">The Power of CSS</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate,
+                                        ducimus vitae voluptatibus similique cumque nulla magni eius sequi possimus ex
+                                        quia aspernatur, incidunt illum cupiditate quas eaque accusamus corrupti!
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate,
+                                        ducimus vitae voluptatibus similique cumque nulla magni eius sequi possimus ex
+                                        quia aspernatur, incidunt illum cupiditate quas eaque accusamus corrupti!
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">Published 3 days ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card mb-4 blog-article ">
+                        <div class="row blog-row g-0">
+                            <!-- Blog Image -->
+                            <div class="col-lg-4 blog-header">
+                                <a href="#" class="blog-image-link">
+                                    <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image" alt="Blog post image">
+                                </a>
+                                <div class="blog-date">
+                                    <div class="blog-day">14</div>
+                                    <div class="blog-month">APRIL</div>
+                                </div>
+                            </div>
+                            <!-- Blog Title and text preview -->
+                            <div class="col-lg-8">
+                                <div class="card-body h-100 d-flex flex-column justify-content-around ">
+                                    <h3 class="card-title">SPA vs MPA Frameworks</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate,
+                                        ducimus vitae voluptatibus similique cumque nulla magni eius sequi possimus ex
+                                        quia aspernatur, incidunt illum cupiditate quas eaque accusamus corrupti!
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate,
+                                        ducimus vitae voluptatibus similique cumque nulla magni eius sequi possimus ex
+                                        quia aspernatur, incidunt illum cupiditate quas eaque accusamus corrupti!
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">Published 3 days ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card mb-4 blog-article ">
+                        <div class="row blog-row g-0">
+                            <!-- Blog Image -->
+                            <div class="col-lg-4 blog-header">
+                                <a href="#" class="blog-image-link">
+                                    <img src="/img/Blog/Blog_Database.jpg" class="blog-image" alt="Blog post image">
+                                </a>
+                                <div class="blog-date">
+                                    <div class="blog-day">12</div>
+                                    <div class="blog-month">February</div>
+                                </div>
+                            </div>
+                            <!-- Blog Title and text preview -->
+                            <div class="col-lg-8">
+                                <div class="card-body h-100 d-flex flex-column justify-content-around ">
+                                    <h3 class="card-title">Storing Images in a DB</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate,
+                                        ducimus vitae voluptatibus similique cumque nulla magni eius sequi possimus ex
+                                        quia aspernatur, incidunt illum cupiditate quas eaque accusamus corrupti!
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate,
+                                        ducimus vitae voluptatibus similique cumque nulla magni eius sequi possimus ex
+                                        quia aspernatur, incidunt illum cupiditate quas eaque accusamus corrupti!
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">Published 3 days ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
         <section id="contact" class="section-page">
-            <h2>Contact Me</h2>
+            <div class="container">
+                <h2 class="display-1 mb-5 text-center">Contact Me</h2>
+                <form action="#">
+                    <div class="row row-cols-1 row-cols-md-2 g-3">
+                        <div class="col">
+                            <label for="FirstName" class="form-label">First Name</label>
+                            <input class="form-control" name="FirstName" Id="FirstName" type="text"
+                                placeholder="First Name" aria-label="First Name" required />
+                        </div>
+                        <div class="col">
+                            <label for="LastName" class="form-label">Last Name</label>
+                            <input class="form-control" name="LastName" Id="LastName" type="text"
+                                placeholder="Last Name" aria-label="Last Name" required />
+                        </div>
+                        <div class="col">
+                            <label for="Email" class="form-label">Email</label>
+                            <input class="form-control" name="Email" Id="Email" type="Email" placeholder="Email"
+                                aria-label="Email" required />
+                        </div>
+                        <div class="col">
+                            <label for="Phone" class="form-label">Phone (optional)</label>
+                            <input class="form-control" name="Phone" Id="Phone" type="tel" placeholder="Phone"
+                                aria-label="Phone" />
+                        </div>
+                        <div class="col col-md-12">
+                            <label for="Subject" class="form-label">Subject</label>
+                            <input class="form-control" name="Subject" Id="Subject" type="text" placeholder="Subject"
+                                aria-label="Subject" required />
+                        </div>
+                        <div class="col col-md-12">
+                            <label for="Message" class="form-label">Message</label>
+                            <textarea class="form-control" name="Message" Id="Message" type="text" placeholder="Message"
+                                aria-label="Message" required rows="4" required></textarea>
+                        </div>
+                        <div class="col-md-12 text-end">
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
         </section>
 
     </main>
