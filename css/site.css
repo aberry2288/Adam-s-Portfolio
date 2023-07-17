@@ -110,7 +110,7 @@ section {
 }
 
 .mainLogo {
-    height: 3em;
+    height: 4em;
     padding-left: .08em;
 }
 
@@ -161,6 +161,8 @@ section {
 
 /* Section Dividers */
 
+/* Curved Dividers */
+
 .section-page>.container::after {
     content: "";
     position: absolute;
@@ -168,8 +170,18 @@ section {
     left: 0;
     right: 0;
     height: 3rem;
-    clip-path: ellipse(50% 100% at top center);
+    /* clip-path: ellipse(50% 100% at top center); */
     z-index: 1;
+}
+
+/* Angled Dividers */
+
+.section-page:nth-child(even)>.container::after {
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+.section-page:nth-child(odd)>.container::after {
+    clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
 }
 
 /* End Section Dividers */
