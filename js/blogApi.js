@@ -1,7 +1,7 @@
 function fetchBlogData() {
-    const baseUrl = 'myblog-production-cc21.up.railway.app';
+    const baseUrl = 'https://myblog-production-cc21.up.railway.app';
 
-    fetch(`${baseUrl}/api/BlogPosts/portfolio?num=3`)
+    fetch(`${baseUrl}/api/BlogPosts/3`)
         .then((response) => response.json())
         .then(function (data) {
             displayBlogData(data, baseUrl);
@@ -10,8 +10,8 @@ function fetchBlogData() {
 
 function displayBlogData(blogPosts, baseUrl) {
 
-    let template = document.getElementById('blogs');
-    let blogSelection = document.getElementById('blog');
+    let template = document.getElementById('blog-template');
+    let blogSection = document.getElementById('blogs');
 
     blogPosts.forEach((blogPost) => {
         const blogPostCard = document.importNode(template.content, true);
@@ -35,7 +35,7 @@ function displayBlogData(blogPosts, baseUrl) {
         let blogTitleDiv = blogPostCard.querySelector('[data-blog="title"]');
         blogTitleDiv.innerHTML = blogPost.title;
 
-        let blogDate = new Date(blogPost.dateCreated); // 2009-11-10
+        let blogDate = new Date(blogPost.created); // 2009-11-10
         let month = blogDate.toLocaleString('default', { month: 'long' });
         let day = blogDate.getDate();
 
@@ -63,7 +63,7 @@ function displayBlogData(blogPosts, baseUrl) {
 
         let dateToday = new Date();
         let createdDate = new Date(
-            blogPost.Updated != null ? blogPost.Updated : blogPost.Created
+            blogPost.updated != null ? blogPost.updated : blogPost.created
         );
         let diffTime = Math.abs(dateToday.getTime() - createdDate.getTime());
         let lastUpdated = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
